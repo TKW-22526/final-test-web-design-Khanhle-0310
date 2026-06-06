@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="menu">
+    <a class="" href="../index.html">Trang chủ</a>
+    <a class="" href="../html/gioithieu.html">Giới thiệu</a>
+    <a class="active" href="../html/sanpham.html">Sản phẩm</a>
+    <a class="" href="../html/lienhe.html">Liên hệ</a>
+    <a href="../html/giohang.html">Giỏ hàng (<span id="soLuong">0</span>)</a>
+</div>
+
+<div class="noidung">
+    <div class="tieude">
+        <h2>Danh sách sản phẩm</h2>
+        <p>Chọn món ăn vặt bạn thích.</p>
+    </div>
+
+    <div class="timkiem">
+        <input type="text" id="timkiem" placeholder="Tìm sản phẩm..." oninput="hienThiSanPham()">
+
+        <select id="loai" onchange="hienThiSanPham()">
+            <option value="tatca">Tất cả</option>
+            <option value="Kẹo tuổi thơ">Kẹo tuổi thơ</option>
+            <option value="Đồ ăn vặt mặn">Đồ ăn vặt mặn</option>
+            <option value="Đồ ăn lạnh">Đồ ăn lạnh</option>
+            <option value="Ô mai - trái cây">Ô mai - trái cây</option>
+        </select>
+    </div>
+
+    <div id="danhsachsanpham" class="danhsach"></div>
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

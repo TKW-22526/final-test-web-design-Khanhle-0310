@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="menu">
+    <a class="" href="../index.html">Trang chủ</a>
+    <a class="" href="../html/gioithieu.html">Giới thiệu</a>
+    <a class="" href="../html/sanpham.html">Sản phẩm</a>
+    <a class="" href="../html/lienhe.html">Liên hệ</a>
+    <a href="../html/giohang.html">Giỏ hàng (<span id="soLuong">0</span>)</a>
+</div>
+
+<div class="giohang">
+    <div class="tieude">
+        <h2>Giỏ hàng của bạn</h2>
+        <p>Các sản phẩm đã chọn sẽ hiển thị ở đây.</p>
+    </div>
+
+    <div id="khunggiohang"></div>
+
+    <div class="tong">
+        Tổng tiền: <span id="tongtien">0đ</span>
+    </div>
+
+    <br>
+    <button class="nut" onclick="thanhToan()">Thanh toán</button>
+    <button class="nut2" onclick="xoaGioHang()">Xóa giỏ hàng</button>
+    <a class="nut2" href="sanpham.html">Mua thêm</a>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
