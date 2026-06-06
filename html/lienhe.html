@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="menu">
+    <a class="" href="../index.html">Trang chủ</a>
+    <a class="" href="../html/gioithieu.html">Giới thiệu</a>
+    <a class="" href="../html/sanpham.html">Sản phẩm</a>
+    <a class="active" href="../html/lienhe.html">Liên hệ</a>
+    <a href="../html/giohang.html">Giỏ hàng (<span id="soLuong">0</span>)</a>
+</div>
+
+<div class="noidung">
+    <div class="tieude">
+        <h2>Liên hệ</h2>
+        <p>Gửi thông tin liên hệ cho tiệm.</p>
+    </div>
+
+    <div class="form-lienhe">
+        <h3>Thông tin tiệm</h3>
+        <p>Email: legiakhanh0310@gmail.com</p>
+        <p>Địa chỉ: Trà Vinh, Việt Nam</p>
+        <p>Giờ mở cửa: 8:00 - 21:00</p>
+
+        <br>
+
+        <form onsubmit="guiLienHe(); return false;">
+            <input type="text" placeholder="Họ tên" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Nội dung" required></textarea>
+            <button class="nut" type="submit">Gửi liên hệ</button>
+        </form>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
