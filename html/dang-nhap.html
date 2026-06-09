@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="menu">
+    <a href="../index.html">Trang chủ</a>
+    <a href="gioi-thieu.html">Giới thiệu</a>
+    <a href="san-pham.html">Sản phẩm</a>
+    <a href="gio-hang.html">Giỏ hàng</a>
+    <a href="lien-he.html">Liên hệ</a>
+    <a class="active" href="dang-nhap.html">Đăng nhập</a>
+</div>
+
+<div class="dangnhap">
+    <div class="khung-dangnhap">
+        <h2>Đăng nhập</h2>
+        <p>Chào mừng bạn đến với Tiệm Ăn Vặt Tuổi Thơ</p>
+
+        <input type="text" id="user" placeholder="Tên đăng nhập">
+        <input type="password" id="pass" placeholder="Mật khẩu">
+
+        <button onclick="dangNhap()">Đăng nhập</button>
+
+        <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+    </div>
+</div>
+
+<script>
+
+function dangNhap(){
+
+    var user=document.getElementById("user").value;
+    var pass=document.getElementById("pass").value;
+
+    if(user=="admin" && pass=="123"){
+
+        alert("Đăng nhập thành công!");
+
+        window.location="../index.html";
+
+    }
+    else{
+
+        alert("Sai tài khoản hoặc mật khẩu!");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

@@ -155,7 +155,7 @@ function themVaoGio(id){
 
 function muaNgay(id){
     themVaoGio(id);
-    window.location.href = "giohang.html";
+    window.location.href = "gio-hang.html";
 }
 
 //Hiển thị sản phẩm
@@ -185,7 +185,7 @@ function hienThiSanPham(){
                     <p>${sp.mota}</p>
                     <p class="gia">${doiTien(sp.gia)}</p>
 
-                    <a class="btn-nho" href="chitiet.html?id=${sp.id}">Chi tiết</a>
+                    <a class="btn-nho" href="chi-tiet.html?id=${sp.id}">Chi tiết</a>
                     <button class="btn-nho" onclick="themVaoGio('${sp.id}')">Thêm giỏ</button>
                     <button class="btn-nho" onclick="muaNgay('${sp.id}')">Mua</button>
                 </div>
@@ -242,7 +242,7 @@ function hienThiChiTiet(){
     <div class="nhom-nut">
         <button class="nut" onclick="muaNgay('${sp.id}')">Mua ngay</button>
         <button class="nut2" onclick="themVaoGio('${sp.id}')">Bỏ vào giỏ hàng</button>
-        <a class="nut2" href="sanpham.html">Quay lại</a>
+        <a class="nut2" href="san-pham.html">Quay lại</a>
     </div>
 `;
 }
